@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button'
 function SearchBar() {
   return (
         <Form>
-            <Row className="align-items-center">
+            <Row className="align-items-center justify-content-center my-3">
                 <Col sm={3} className="my-1">
                 <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
                     Name

@@ -8,12 +8,12 @@ import Row from 'react-bootstrap/Row'
 
 function Home() {
   return (
-    <Container>
-        <Row>
+    <Container className="my-5">
+        <Row className="my-3">
             <SearchBar />
         </Row>
-        <Row>
-            <JobList />
+        <Row className="my-3">
+            <JobList/>
         </Row>  
     </Container>
   );
