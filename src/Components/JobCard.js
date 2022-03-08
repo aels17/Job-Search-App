@@ -10,7 +10,7 @@ function JobCard({job}) {
 
 
   return (
-    <Card style={{ width: '18rem' }} className="m-auto" >
+    <Card className="m-auto p-2" >
     <Card.Body>
       <Card.Title>{company}</Card.Title>
       <Card.Subtitle className="mb-2 text-muted pb-2">{job_title}</Card.Subtitle>
