@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card'
 
 function JobCard() {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem' }} >
     <Card.Body>
       <Card.Title>Card Title</Card.Title>
       <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>

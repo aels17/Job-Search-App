@@ -9,17 +9,17 @@ import Col from 'react-bootstrap/Col'
 function JobList() {
   return (
     <div>
-        <Row className="d-flex justify-content-end p-2">
-            <Col>
+        <Row className="d-flex justify-content-end">
+            <Col className="py-3">
                 <JobCard />      
             </Col>
-            <Col>
+            <Col className="py-3">
             <JobCard />             
             </Col>
-            <Col>
+            <Col className="py-3">
             <JobCard />             
             </Col>
-            <Col>
+            <Col className="py-3">
             <JobCard />             
             </Col>
         </Row>
