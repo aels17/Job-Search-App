@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
@@ -9,6 +10,8 @@ import CreateJob from './CreateJob'
 
 function App() {
   return (
+    <Router>
+
     <div className="App">
       <Navbar />
       <Switch>
@@ -20,6 +23,8 @@ function App() {
         </Route>
       </Switch>
     </div>
+    </Router>
+
   );
 }
 
