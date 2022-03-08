@@ -6,26 +6,19 @@ import Col from 'react-bootstrap/Col'
 
 
 
-function JobList() {
+function JobList({jobs}) {
+
+  function mapJobs() {
+
+    return jobs.map(job => <Col key={job.id} className="py-3"><JobCard  job={job} /></Col>)
+
+  }
+
   return (
     <div>
         <Row className="d-flex justify-content-end">
-            <Col className="py-3">
-                <JobCard />      
-            </Col>
-            <Col className="py-3">
-            <JobCard />             
-            </Col>
-            <Col className="py-3">
-            <JobCard />             
-            </Col>
-            <Col className="py-3">
-            <JobCard />             
-            </Col>
+          {mapJobs()}
         </Row>
-
-
-
     </div>
   );
 }

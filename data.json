@@ -2,7 +2,7 @@
     "job-listings": [
       {
         "id": 1,
-        "compoany": "Flatiron School",
+        "company": "Flatiron School",
         "job_title": "Front End Developer",
         "short_description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "status": "Applied",
@@ -13,7 +13,7 @@
       },
       {
         "id": 2,
-        "compoany": "Someother School",
+        "company": "Someother School",
         "job_title": "Back End Developer",
         "short_description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "status": "In Progress",

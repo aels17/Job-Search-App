@@ -6,14 +6,14 @@ import Row from 'react-bootstrap/Row'
 
 
 
-function Home() {
+function Home({jobs}) {
   return (
     <Container className="my-5">
         <Row className="my-3">
             <SearchBar />
         </Row>
         <Row className="my-3">
-            <JobList/>
+            <JobList jobs={jobs}/>
         </Row>  
     </Container>
   );
