@@ -13,7 +13,7 @@ function SearchBar() {
                 <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
                     Name
                 </Form.Label>
-                <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
+                <Form.Control id="inlineFormInputName" placeholder="Search..." />
                 </Col>
                 <Col xs="auto" className="my-1">
                 <Button type="submit">Submit</Button>
