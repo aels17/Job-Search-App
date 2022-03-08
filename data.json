@@ -1,0 +1,23 @@
+{
+    "job-lisitngs": [
+      {
+        "id": 1,
+        "compoany": "Flatiron School",
+        "job_title": "Front End Develoepr",
+        "status": "Applied",
+        "location": "New York, NY",
+        "date_applied": "3/8/2022",
+        "notes": "lorem ipsum"
+      },
+      {
+        "id": 2,
+        "compoany": "Flatiron School",
+        "job_title": "Front End Develoepr",
+        "status": "Applied",
+        "location": "New York, NY",
+        "date_applied": "3/8/2022",
+        "notes": "lorem ipsum"
+      }
+
+    ]
+  }
