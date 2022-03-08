@@ -12,12 +12,12 @@
       },
       {
         "id": 2,
-        "compoany": "Flatiron School",
-        "job_title": "Front End Developer",
+        "compoany": "Someother School",
+        "job_title": "Back End Developer",
         "short_description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        "status": "Applied",
-        "location": "New York, NY",
-        "date_applied": "3/8/2022",
+        "status": "In Progress",
+        "location": "Austin, TX",
+        "date_applied": "3/6/2022",
         "notes": "lorem ipsum"
       }
 
