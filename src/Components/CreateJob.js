@@ -32,12 +32,12 @@ function CreateJob({createJob}) {
 
               <Form.Group as={Col} controlId="formGridCompany">
                 <Form.Label>Company</Form.Label>
-                <Form.Control name="company" type="text" placeholder="Enter company" />
+                <Form.Control name="company" type="text" placeholder="Enter company" required  />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridJobTitle">
                 <Form.Label>Job Title</Form.Label>
-                <Form.Control name="job_title" type="password" placeholder="Enter Job Title" />
+                <Form.Control name="job_title" type="text" placeholder="Enter Job Title" required />
               </Form.Group>
 
             </Row>
@@ -48,9 +48,9 @@ function CreateJob({createJob}) {
                   <Form.Control name="poc" type="text" placeholder="Enter name" />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridPassword">
+                <Form.Group as={Col} controlId="formGridLocation">
                   <Form.Label>Location</Form.Label>
-                  <Form.Control name="location" type="password" placeholder="Enter Location" />
+                  <Form.Control name="location" type="text" placeholder="Enter Location" />
                 </Form.Group>
 
               </Row>
@@ -61,9 +61,9 @@ function CreateJob({createJob}) {
                   <Form.Control type="date" defaultValue={today}  />
                 </Form.Group>
               
-                <Form.Group as={Col} controlId="formGridDate">
+                <Form.Group as={Col} controlId="formGridJobStatus">
                 <Form.Label>Job Status</Form.Label>
-                  <Form.Select aria-label="Job Status" name="job_status" >
+                  <Form.Select aria-label="Job Status" name="job_status" required>
                     <option readOnly>Select Status</option>
                     <option value="Not Applied">Not Applied</option>
                     <option value="Applied">Applied</option>
@@ -76,7 +76,7 @@ function CreateJob({createJob}) {
               </Row>
 
               <Row className="mb-3"> 
-                 <Form.Group as={Col} controlId="formGridDate">
+                 <Form.Group as={Col} controlId="formGridWebsite">
                     <Form.Label>Website</Form.Label>
                     <Form.Control name="website" type="url" placeholder="www.example.com"  />
                 </Form.Group>
@@ -85,7 +85,7 @@ function CreateJob({createJob}) {
               <Row className="mb-3">
                 <Form.Group  controlId="shortDescription">
                     <Form.Label>Short Description</Form.Label>
-                    <Form.Control name="short_description"  as="textarea" rows={3} />
+                    <Form.Control name="short_description"  as="textarea" rows={3} required />
                   </Form.Group>
               </Row>
 

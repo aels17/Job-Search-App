@@ -1,16 +1,15 @@
 import React, {useState, useEffect} from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import faker from 'faker';
 import '../App.css';
 import Navbar from './Navbar';
 import Home from './Home'
 import CreateJob from './CreateJob'
+import JobDetails from './JobDetails'
 
 
 function App() {
-
 
   //Initial GET Request
   const [jobs, setJobs] = useState([])
@@ -23,10 +22,13 @@ function App() {
 
 
 //Send POST request on form submit
+
+
 function createJob(e) {
 
   e.preventDefault()
 
+  
 
   const newJob = {
     id: faker.random.uuid(),
@@ -40,12 +42,23 @@ function createJob(e) {
     notes: e.target.notes.value
   }
 
-  console.log(newJob)
+  setJobs([...jobs, newJob])
+
+
+  fetch('http://localhost:8001/job-listings', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json, text/plain, */*',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(newJob)
+  }).then(res => res.json())
+    .then(res => console.log(res));
+
+    window.location = '/'
 
 
 }
-
-
 
   return (
     <Router>
@@ -58,6 +71,7 @@ function createJob(e) {
         <Route exact path="/">
           <Home  jobs={jobs}/>
         </Route>
+        <Route path="/:id" children={<JobDetails jobs={jobs} />} />
       </Switch>
     </div>
     </Router>

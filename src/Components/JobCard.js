@@ -8,9 +8,8 @@ function JobCard({job}) {
   const {company, date_applied, job_title, short_description, status } = job
 
 
-
   return (
-    <Card className="m-auto p-2" >
+    <Card className="m-auto p-2 h-100" >
     <Card.Body>
       <Card.Title>{company}</Card.Title>
       <Card.Subtitle className="mb-2 text-muted pb-2">{job_title}</Card.Subtitle>
