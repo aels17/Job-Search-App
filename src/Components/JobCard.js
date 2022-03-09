@@ -9,11 +9,11 @@ function JobCard({job}) {
 
 
   return (
-    <Card className="m-auto p-2 h-100" >
-    <Card.Body>
+    <Card className="m-auto  h-100" >
+    <Card.Header  style={{fontWeight: "700", fontSize: "14px", paddingLeft: "1.5rem"}}>{status}</Card.Header>
+    <Card.Body className="p-4">
       <Card.Title>{company}</Card.Title>
       <Card.Subtitle className="mb-2 text-muted pb-2">{job_title}</Card.Subtitle>
-      <Card.Text><strong>Status:</strong>  {status}</Card.Text>
       <Card.Text>{short_description}</Card.Text>
       <Button>Details</Button>
     </Card.Body>
