@@ -1,0 +1,6 @@
+.in-progress.card-header {
+    background: lightyellow;
+}
+.applied.card-header {
+    background: lightblue;
+}
