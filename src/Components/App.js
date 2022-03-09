@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import faker from 'faker';
 import '../App.css';
 import Navbar from './Navbar';
 import Home from './Home'
@@ -9,6 +10,7 @@ import CreateJob from './CreateJob'
 
 
 function App() {
+
 
   //Initial GET Request
   const [jobs, setJobs] = useState([])
@@ -25,12 +27,13 @@ function createJob(e) {
 
   e.preventDefault()
 
+
   const newJob = {
-    id: jobs.length + 1,
+    id: faker.random.uuid(),
     company: e.target.company.value,
     job_title: e.target.job_title.value,
     short_description: e.target.short_description.value,
-    job_status: e.target.job_status.value,
+    status: e.target.job_status.value,
     location: e.target.location.value,
     date_applied: e.target.date_applied,
     website: e.target.website.value,
