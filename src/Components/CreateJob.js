@@ -97,7 +97,9 @@ function CreateJob({createJob}) {
               </Row>
 
               <Row className="mb-3">
-               <Button variant="primary" type="submit">Submit</Button>
+                <Form.Group controlId="submit">
+                  <Button variant="primary" type="submit">Submit</Button>
+                </Form.Group>
               </Row>
 
           </Form>            
