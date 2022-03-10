@@ -52,8 +52,6 @@ function createJob(e) {
 
   e.preventDefault()
 
-  
-
   const newJob = {
     id: faker.random.uuid(),
     company: e.target.company.value,
@@ -81,6 +79,9 @@ function createJob(e) {
 
     window.location = '/'
 
+}
+
+function filterStatus() {
 
 }
 
@@ -95,7 +96,7 @@ function createJob(e) {
         <Route exact path="/">
           <Home  jobs={jobs} toggleDeleteModal={toggleDeleteModal}  />
         </Route>
-        <Route path="/:id" children={<JobDetails jobs={jobs} toggleDeleteModal={toggleDeleteModal} deleteModalShow={deleteModalShow} deleteJob={deleteJob} />} />
+        <Route path="/:id" children={<JobDetails jobs={jobs} toggleDeleteModal={toggleDeleteModal} deleteModalShow={deleteModalShow} deleteJob={deleteJob} filterStatus={filterStatus}/>} />
       </Switch>
     </div>
     </Router>
