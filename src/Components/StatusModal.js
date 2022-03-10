@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 
 
-function DeleteModal({modalShow, toggleModal, filterStatus, job}) {
+function DeleteModal({modalShow, toggleModal, job}) {
 
   const [status, setStatus] = useState('Not Applied')
 

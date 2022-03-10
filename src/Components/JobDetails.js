@@ -11,7 +11,7 @@ import Badge from 'react-bootstrap/Badge'
 
 
 
-function NavBar({jobs, toggleDeleteModal, deleteModalShow, deleteJob, filterStatus}) {
+function NavBar({jobs, toggleDeleteModal, deleteModalShow, deleteJob}) {
 
     const [job, setJob] = useState([])
     const [statusClass, setStatusClass] = useState('')
@@ -81,7 +81,7 @@ function NavBar({jobs, toggleDeleteModal, deleteModalShow, deleteJob, filterStat
             </Row>
 
             <DeleteModal modalShow={deleteModalShow} toggleModal={toggleDeleteModal} deleteJob={deleteJob} job={job}/>
-            <StatusModal modalShow={showStatusModal} toggleModal={toggleStatusModal} job={job} filterStatus={filterStatus}/>
+            <StatusModal modalShow={showStatusModal} toggleModal={toggleStatusModal} job={job}/>
 
 
         </Container>

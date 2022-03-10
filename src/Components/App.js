@@ -81,9 +81,6 @@ function createJob(e) {
 
 }
 
-function filterStatus() {
-
-}
 
   return (
     <Router>
@@ -96,7 +93,7 @@ function filterStatus() {
         <Route exact path="/">
           <Home  jobs={jobs} toggleDeleteModal={toggleDeleteModal}  />
         </Route>
-        <Route path="/:id" children={<JobDetails jobs={jobs} toggleDeleteModal={toggleDeleteModal} deleteModalShow={deleteModalShow} deleteJob={deleteJob} filterStatus={filterStatus}/>} />
+        <Route path="/:id" children={<JobDetails jobs={jobs} toggleDeleteModal={toggleDeleteModal} deleteModalShow={deleteModalShow} deleteJob={deleteJob}/>} />
       </Switch>
     </div>
     </Router>
