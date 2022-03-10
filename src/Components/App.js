@@ -32,9 +32,12 @@ function App() {
 //Perform Delete
 function deleteJob(deletedJob) {
 
+
   const newJobList = jobs.filter(job => jobs.indexOf(job) !== jobs.indexOf(deletedJob))
 
   setJobs(newJobList)
+
+  console.log(deletedJob.id)
 
   window.location = '/'
 
@@ -46,7 +49,7 @@ fetch(`http://localhost:8001/job-listings/${deletedJob.id}`, {
 
 
 //Send POST request on form submit
-
+const [formEntry, setFormEntry] = useState()
 
 function createJob(e) {
 
@@ -63,8 +66,9 @@ function createJob(e) {
     website: e.target.website.value,
     notes: e.target.notes.value
   }
+  setFormEntry(newJob)
 
-  setJobs([...jobs, newJob])
+  setJobs([...jobs, formEntry])
 
 
   fetch('http://localhost:8001/job-listings', {

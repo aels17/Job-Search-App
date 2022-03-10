@@ -11,6 +11,14 @@
     background: lightblue;
 
 }
+.accepted.card-header{
+  background: lightgreen;
+
+}
+.rejected.card-header{
+  background: lightcoral;
+
+}
 
 .delete-btn.btn-link {
   background: transparent;

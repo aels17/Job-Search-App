@@ -252,33 +252,23 @@
       "notes": "lorem ipsum"
     },
     {
-      "id": "9d9699ad-1d30-4467-9bbe-34358aad58d4",
+      "id": "7da710b8-4899-4629-9255-a931953905fa",
       "company": "test",
       "job_title": "test",
-      "short_description": "",
-      "status": "Select Status",
-      "location": "",
+      "short_description": "test",
+      "status": "Accepted",
+      "location": "test",
       "website": "",
       "notes": ""
     },
     {
-      "id": "698c6183-e1d5-4ef9-9503-6c2a67b562f4",
+      "id": "e217f90e-1bbb-4d63-99ea-c355b374159d",
       "company": "test",
       "job_title": "test",
       "short_description": "test",
-      "status": "Not Applied",
+      "status": "Accepted",
       "location": "test",
-      "website": "https://evanchernicky.com/",
-      "notes": "test"
-    },
-    {
-      "id": "617f1691-b5fb-4589-8731-969a10fb090f",
-      "company": "test",
-      "job_title": "test",
-      "short_description": "test",
-      "status": "Interview Scheduled",
-      "location": "test",
-      "website": "https://evanchernicky.com/",
+      "website": "",
       "notes": ""
     }
   ]

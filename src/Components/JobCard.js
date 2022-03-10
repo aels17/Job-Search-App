@@ -20,7 +20,7 @@ function JobCard({job, toggleDeleteModal, deleteModalShow, deleteJob}) {
       <Card.Subtitle className="mb-2 text-muted pb-2">{job_title}</Card.Subtitle>
       <Card.Text>{short_description}</Card.Text>
       <Link to={'/' + id} ><Button>Details</Button></Link>
-      <Button onClick={() => toggleDeleteModal(job)} className="delete-btn btn-link">Delete</Button>
+      {/* <Button onClick={() => toggleDeleteModal(job)} className="delete-btn btn-link">Delete</Button> */}
     </Card.Body>
     <DeleteModal modalShow={deleteModalShow} toggleModal={toggleDeleteModal} deleteJob={deleteJob} job={job}/>
   </Card>
