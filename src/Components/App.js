@@ -22,11 +22,11 @@ function App() {
     }, [])
 
 
-//Toggle Modal
-   const [modalShow, setModalShow] = useState(false);
+//Toggle Delete Modal
+   const [deleteModalShow, setdeleteModalShow] = useState(false);
 
-   function toggleModal() {
-     setModalShow(!modalShow)
+   function toggleDeleteModal() {
+    setdeleteModalShow(!deleteModalShow)
    }
 
 //Perform Delete
@@ -93,9 +93,9 @@ function createJob(e) {
           <CreateJob createJob={createJob} />
         </Route>
         <Route exact path="/">
-          <Home  jobs={jobs}/>
+          <Home  jobs={jobs} toggleDeleteModal={toggleDeleteModal}  />
         </Route>
-        <Route path="/:id" children={<JobDetails jobs={jobs} toggleModal={toggleModal} modalShow={modalShow} deleteJob={deleteJob} />} />
+        <Route path="/:id" children={<JobDetails jobs={jobs} toggleDeleteModal={toggleDeleteModal} deleteModalShow={deleteModalShow} deleteJob={deleteJob} />} />
       </Switch>
     </div>
     </Router>

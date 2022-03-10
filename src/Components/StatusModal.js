@@ -9,18 +9,18 @@ function DeleteModal({modalShow, toggleModal, deleteJob, job}) {
     <Modal show={modalShow} onHide={() => toggleModal()} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
     <Modal.Header closeButton>
       <Modal.Title id="contained-modal-title-vcenter">
-        Delete Job
+        Edit Status
       </Modal.Title>
     </Modal.Header>
     <Modal.Body>
-      <h4>Are you sure that you want to delete {job.company}?</h4>
+      <h4>What would you like the new status to be?</h4>
       <p>
         Deleting this job here will permanently delete the job from the database. To return to job, click close. Otherwise, clickk delete.
       </p>
     </Modal.Body>
     <Modal.Footer>
+      <Button  className="btn-primary">Change Status</Button>
       <Button onClick={() => toggleModal()} className="btn-secondary">Close</Button>
-      <Button onClick={() => deleteJob(job)} className="btn-danger">Delete</Button>
     </Modal.Footer>
   </Modal>
   )

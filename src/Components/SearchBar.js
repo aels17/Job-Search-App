@@ -16,7 +16,14 @@ function SearchBar() {
                 <Form.Control id="inlineFormInputName" placeholder="Search..." />
                 </Col>
                 <Col xs="auto" className="my-1">
-                <Button type="submit">Submit</Button>
+                  <Form.Select aria-label="Job Status" name="job_status" required>
+                    <option readOnly>Select Status</option>
+                    <option value="Not Applied">Not Applied</option>
+                    <option value="Applied">Applied</option>
+                    <option value="Interview Scheduled">Interview Scheduled</option>
+                    <option value="Rejected">Rejected</option>
+                    <option value="Accepted">Accepted</option>
+                  </Form.Select>
                 </Col>
             </Row>
         </Form>    

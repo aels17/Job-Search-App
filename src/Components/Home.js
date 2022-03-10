@@ -1,4 +1,5 @@
 import React from 'react';
+import DeleteModal from './DeleteModal'
 import SearchBar from './SearchBar'
 import JobList from './JobList'
 import Container from 'react-bootstrap/Container'
@@ -14,7 +15,7 @@ function Home({jobs}) {
         </Row>
         <Row className="my-3">
             <JobList jobs={jobs}/>
-        </Row>  
+        </Row> 
     </Container>
   );
 }

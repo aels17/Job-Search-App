@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { useParams } from "react-router-dom";
 import DeleteModal from './DeleteModal';
+import StatusModal from './StatusModal';
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
@@ -10,7 +11,7 @@ import Badge from 'react-bootstrap/Badge'
 
 
 
-function NavBar({jobs, toggleModal, modalShow, deleteJob}) {
+function NavBar({jobs, toggleDeleteModal, deleteModalShow, deleteJob}) {
 
     const [job, setJob] = useState([])
     const [statusClass, setStatusClass] = useState('')
@@ -69,11 +70,13 @@ function NavBar({jobs, toggleModal, modalShow, deleteJob}) {
                 <p>{notes}</p>  
             </Row>
             <Row className="d-flex justify-content-center my-5">
-                <Button className="btn-secondary" style={{width: "auto", margin: "0 10px"}}>Edit Status</Button>
-                <Button onClick={() => toggleModal()} style={{width: "auto", margin: "0 10px"}}>Delete Job</Button>
+                {/* <Button onClick={() => toggleModal()} className="btn-secondary" style={{width: "auto", margin: "0 10px"}}>Edit Status</Button> */}
+                <Button onClick={() => toggleDeleteModal()} className="btn-danger" style={{width: "auto", margin: "0 10px"}}>Delete Job</Button>
             </Row>
 
-            <DeleteModal modalShow={modalShow} toggleModal={toggleModal} deleteJob={deleteJob} job={job}/>
+            <DeleteModal modalShow={deleteModalShow} toggleModal={toggleDeleteModal} deleteJob={deleteJob} job={job}/>
+            {/* <StatusModal modalShow={modalShow} toggleModal={toggleModal} deleteJob={deleteJob} job={job}/> */}
+
 
         </Container>
         
