@@ -250,26 +250,6 @@
       "date_applied": "3/6/2022",
       "website": "google.com",
       "notes": "lorem ipsum"
-    },
-    {
-      "id": "7da710b8-4899-4629-9255-a931953905fa",
-      "company": "test",
-      "job_title": "test",
-      "short_description": "test",
-      "status": "Accepted",
-      "location": "test",
-      "website": "",
-      "notes": ""
-    },
-    {
-      "id": "e217f90e-1bbb-4d63-99ea-c355b374159d",
-      "company": "test",
-      "job_title": "test",
-      "short_description": "test",
-      "status": "Accepted",
-      "location": "test",
-      "website": "",
-      "notes": ""
     }
   ]
 }
