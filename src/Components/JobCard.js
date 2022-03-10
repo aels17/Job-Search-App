@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
 
 function JobCard({job}) {
 
-  const {company, date_applied, job_title, short_description, status } = job
+  const {id, company, date_applied, job_title, short_description, status } = job
 
 
   return (
@@ -15,7 +16,7 @@ function JobCard({job}) {
       <Card.Title>{company}</Card.Title>
       <Card.Subtitle className="mb-2 text-muted pb-2">{job_title}</Card.Subtitle>
       <Card.Text>{short_description}</Card.Text>
-      <Button>Details</Button>
+      <Link to={'/' + id} ><Button>Details</Button></Link>
     </Card.Body>
   </Card>
   );
