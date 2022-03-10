@@ -16,7 +16,7 @@ function JobList({jobs}) {
 
   return (
     <div>
-        <Row className="d-flex justify-content-end">
+        <Row className="d-flex justify-content-start">
           {mapJobs()}
         </Row>
     </div>

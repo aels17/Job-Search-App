@@ -33,16 +33,6 @@
       "notes": ""
     },
     {
-      "id": "da4609de-2031-4c6d-9868-66d948f1e740",
-      "company": "test",
-      "job_title": "test",
-      "short_description": "test",
-      "status": "Not Applied",
-      "location": "test",
-      "website": "https://evanchernicky.com/",
-      "notes": ""
-    },
-    {
       "id": "698c6183-e1d5-4ef9-9503-6c2a67b562f4",
       "company": "test",
       "job_title": "test",
@@ -73,16 +63,6 @@
       "notes": "test"
     },
     {
-      "id": "67b34572-eb28-48a6-8304-ab20b5c2d755",
-      "company": "test",
-      "job_title": "tes",
-      "short_description": "test",
-      "status": "Not Applied",
-      "location": "adsfaf",
-      "website": "https://evanchernicky.com/",
-      "notes": ""
-    },
-    {
       "id": "5c8bc0fa-aa53-49fb-95ce-1ea0beb61d68",
       "company": "test",
       "job_title": "test",
@@ -99,26 +79,6 @@
       "short_description": "test",
       "status": "Not Applied",
       "location": "test",
-      "website": "https://evanchernicky.com/",
-      "notes": ""
-    },
-    {
-      "id": "e5ef852b-cd6d-46da-85b5-90f3ddb71307",
-      "company": "test",
-      "job_title": "test",
-      "short_description": "test",
-      "status": "Not Applied",
-      "location": "test",
-      "website": "https://evanchernicky.com/",
-      "notes": ""
-    },
-    {
-      "id": "d7b80f69-34a0-4b7f-90cb-eccac7f220ba",
-      "company": "test",
-      "job_title": "tes",
-      "short_description": "test",
-      "status": "Not Applied",
-      "location": "adsfaf",
       "website": "https://evanchernicky.com/",
       "notes": ""
     }

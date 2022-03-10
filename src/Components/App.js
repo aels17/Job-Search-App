@@ -9,6 +9,7 @@ import CreateJob from './CreateJob'
 import JobDetails from './JobDetails'
 
 
+
 function App() {
 
   //Initial GET Request
@@ -19,6 +20,29 @@ function App() {
       .then( jobData => setJobs(jobData))
 
     }, [])
+
+
+//Toggle Modal
+   const [modalShow, setModalShow] = useState(false);
+
+   function toggleModal() {
+     setModalShow(!modalShow)
+   }
+
+//Perform Delete
+function deleteJob(deletedJob) {
+
+  const newJobList = jobs.filter(job => jobs.indexOf(job) !== jobs.indexOf(deletedJob))
+
+  setJobs(newJobList)
+
+  window.location = '/'
+
+fetch(`http://localhost:8001/job-listings/${deletedJob.id}`, {
+  method: 'DELETE'
+})
+
+}
 
 
 //Send POST request on form submit
@@ -71,7 +95,7 @@ function createJob(e) {
         <Route exact path="/">
           <Home  jobs={jobs}/>
         </Route>
-        <Route path="/:id" children={<JobDetails jobs={jobs} />} />
+        <Route path="/:id" children={<JobDetails jobs={jobs} toggleModal={toggleModal} modalShow={modalShow} deleteJob={deleteJob} />} />
       </Switch>
     </div>
     </Router>

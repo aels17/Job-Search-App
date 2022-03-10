@@ -6,11 +6,11 @@ import Button from 'react-bootstrap/Button'
 
 function JobCard({job}) {
 
-  const {id, company, date_applied, job_title, short_description, status } = job
+  const {id, company, job_title, short_description, status } = job
 
 
   return (
-    <Card className="m-auto  h-100" >
+    <Card className="m-auto  h-100 scale-up-center" >
     <Card.Header  className={status.toLowerCase().replace(' ', '-')} style={{fontWeight: "700", fontSize: "14px", paddingLeft: "1.5rem"}}>{status}</Card.Header>
     <Card.Body className="p-4">
       <Card.Title>{company}</Card.Title>

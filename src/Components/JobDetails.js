@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { useParams } from "react-router-dom";
+import DeleteModal from './DeleteModal';
 import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
@@ -8,9 +10,11 @@ import Badge from 'react-bootstrap/Badge'
 
 
 
-function NavBar({jobs}) {
+function NavBar({jobs, toggleModal, modalShow, deleteJob}) {
 
     const [job, setJob] = useState([])
+    const [statusClass, setStatusClass] = useState('')
+
 
     let {id} = useParams()
 
@@ -19,6 +23,7 @@ function NavBar({jobs}) {
     useEffect(() => {
         if (selectedJob[0] !== undefined) {
             setJob(selectedJob[0])
+            setStatusClass(selectedJob[0].status)
         }
     }, [selectedJob])
 
@@ -28,8 +33,9 @@ function NavBar({jobs}) {
 
   return (
         <Container className=" p-2">
+
             <Row className="d-flex justify-content-center my-3">
-                <Badge style={{textAlign: "center", maxWidth: "150px", margin: "auto", marginBottom: "20px"}}>{status}</Badge>
+                <Badge className={statusClass.toLowerCase().replace(' ', '-')} style={{textAlign: "center", maxWidth: "150px", margin: "auto", marginBottom: "20px"}}>{status}</Badge>
                 <h1 style={{textAlign: "center"}}>{company}</h1>
                 <p style={{textAlign: "center"}}>{location}</p>
 
@@ -62,7 +68,15 @@ function NavBar({jobs}) {
                 <h3 style={{}}>Notes </h3>
                 <p>{notes}</p>  
             </Row>
+            <Row className="d-flex justify-content-center my-5">
+                <Button className="btn-secondary" style={{width: "auto", margin: "0 10px"}}>Edit Status</Button>
+                <Button onClick={() => toggleModal()} style={{width: "auto", margin: "0 10px"}}>Delete Job</Button>
+            </Row>
+
+            <DeleteModal modalShow={modalShow} toggleModal={toggleModal} deleteJob={deleteJob} job={job}/>
+
         </Container>
+        
   );
 }
 
