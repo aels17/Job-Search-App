@@ -91,7 +91,7 @@ function createJob(e) {
           <CreateJob createJob={createJob} />
         </Route>
         <Route exact path="/">
-          <Home  jobs={jobs} toggleDeleteModal={toggleDeleteModal}  />
+          <Home  jobs={jobs} toggleDeleteModal={toggleDeleteModal} deleteModalShow={deleteModalShow} deleteJob={deleteJob} />
         </Route>
         <Route path="/:id" children={<JobDetails jobs={jobs} toggleDeleteModal={toggleDeleteModal} deleteModalShow={deleteModalShow} deleteJob={deleteJob}/>} />
       </Switch>

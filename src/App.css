@@ -12,6 +12,17 @@
 
 }
 
+.delete-btn.btn-link {
+  background: transparent;
+  border:0;
+  color: red;
+}
+.delete-btn.btn-link:hover, .delete-btn.btn-link:active, .delete-btn.btn-link:focus .delete-btn.btn-link:active:focus, .btn-primary:focus {
+  background: transparent !important;
+  color: gray;
+  box-shadow: none !important;
+}
+
 
 /*Animations*/
 

@@ -7,14 +7,14 @@ import Row from 'react-bootstrap/Row'
 
 
 
-function Home({jobs}) {
+function Home({jobs, toggleDeleteModal, deleteModalShow, deleteJob}) {
   return (
     <Container className="my-5">
         <Row className="my-3">
             <SearchBar />
         </Row>
         <Row className="my-3">
-            <JobList jobs={jobs}/>
+            <JobList jobs={jobs} toggleDeleteModal={toggleDeleteModal} deleteModalShow={deleteModalShow} deleteJob={deleteJob}/>
         </Row> 
     </Container>
   );

@@ -6,11 +6,11 @@ import Col from 'react-bootstrap/Col'
 
 
 
-function JobList({jobs}) {
+function JobList({jobs, toggleDeleteModal, deleteModalShow, deleteJob}) {
 
   function mapJobs() {
 
-    return jobs.map(job => <Col key={job.id} className="py-3 col-md-3"><JobCard  job={job} /></Col>)
+    return jobs.map(job => <Col key={job.id} className="py-3 col-md-3"><JobCard  job={job} toggleDeleteModal={toggleDeleteModal} deleteModalShow={deleteModalShow} deleteJob={deleteJob}/></Col>)
 
   }
 
