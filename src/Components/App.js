@@ -60,6 +60,7 @@ function createJob(e) {
     company: e.target.company.value,
     job_title: e.target.job_title.value,
     short_description: e.target.short_description.value,
+    person_of_contact: e.target.poc.value,
     status: e.target.job_status.value,
     location: e.target.location.value,
     date_applied: e.target.date_applied,

@@ -58,7 +58,7 @@ function CreateJob({createJob}) {
 
                 <Form.Group as={Col} controlId="formGridDate">
                 <Form.Label>Date</Form.Label>
-                  <Form.Control type="date" defaultValue={today}  />
+                  <Form.Control type="date" name="date_applied" defaultValue={today}  />
                 </Form.Group>
               
                 <Form.Group as={Col} controlId="formGridJobStatus">
@@ -97,9 +97,7 @@ function CreateJob({createJob}) {
               </Row>
 
               <Row className="mb-3">
-                <Form.Group controlId="submit">
                   <Button variant="primary" type="submit">Submit</Button>
-                </Form.Group>
               </Row>
 
           </Form>            

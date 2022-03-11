@@ -29,7 +29,7 @@ function NavBar({jobs, toggleDeleteModal, deleteModalShow, deleteJob}) {
     }, [selectedJob])
 
 
-    const {company, website, job_title, short_description, date_applied, location, notes, status} = job
+    const {company, website, job_title, short_description, date_applied, location, notes, status, person_of_contact} = job
 
     //Control Status Modal
     const [showStatusModal, setShowStatusModal] = useState(false)
@@ -58,6 +58,12 @@ function NavBar({jobs, toggleDeleteModal, deleteModalShow, deleteJob}) {
                     <Card className="py-3 h-100" style={{textAlign: "center"}}>
                     <strong >Date Applied </strong>
                 <p style={{marginBottom: "0"}}>{date_applied}</p>  
+                    </Card>       
+                </Col>
+                <Col>
+                    <Card className="py-3 h-100" style={{textAlign: "center"}}>
+                    <strong style={{}}>Person of Contact </strong>
+                    <p style={{marginBottom: "0"}}>{person_of_contact}</p>   
                     </Card>       
                 </Col>
                 <Col>
