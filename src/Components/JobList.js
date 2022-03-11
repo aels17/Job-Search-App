@@ -15,6 +15,7 @@ function JobList({jobs, toggleDeleteModal, deleteModalShow, deleteJob, searchTer
         return <Col key={job.id} className="py-3 col-md-3"><JobCard  job={job} toggleDeleteModal={toggleDeleteModal} deleteModalShow={deleteModalShow} deleteJob={deleteJob}/></Col>
       })
       .filter(job => {
+        console.log(job)
         const name = job.props.children.props.job.company.toLowerCase()
         if (name.includes(searchTerm.toLowerCase()) || searchTerm === '') {
           return job
