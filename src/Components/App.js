@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { faker } from '@faker-js/faker'
+// import { faker } from '@faker-js/faker'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import Navbar from './Navbar';
@@ -59,7 +59,7 @@ function createJob(e) {
 
 
   const newJob = {
-    id: faker.random.uuid(),
+    // id: faker.random.uuid(),
     company: e.target.company.value,
     job_title: e.target.job_title.value,
     short_description: e.target.short_description.value,
