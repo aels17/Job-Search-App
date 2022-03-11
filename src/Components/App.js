@@ -55,6 +55,9 @@ function createJob(e) {
 
   e.preventDefault()
 
+  window.location = '/'
+
+
   const newJob = {
     id: faker.random.uuid(),
     company: e.target.company.value,
@@ -63,7 +66,7 @@ function createJob(e) {
     person_of_contact: e.target.poc.value,
     status: e.target.job_status.value,
     location: e.target.location.value,
-    date_applied: e.target.date_applied,
+    date_applied: e.target.date_applied.value,
     website: e.target.website.value,
     notes: e.target.notes.value
   }
@@ -81,8 +84,6 @@ function createJob(e) {
     body: JSON.stringify(newJob)
   }).then(res => res.json())
     .then(res => console.log(res));
-
-    window.location = '/'
 
 }
 
