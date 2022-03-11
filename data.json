@@ -1,0 +1,64 @@
+{
+  "job-listings": [
+    {
+      "id": "86a18a3a-cf29-41ca-b3fc-526778e08ce2",
+      "company": "Flatiron School",
+      "job_title": "Front End Developer",
+      "short_description": "Flatiron School has been building tech talent since 2012. Our programs include software engineering, cybersecurity, data science, and product design.",
+      "person_of_contact": "Antonio",
+      "status": "Applied",
+      "date_applied": "03/10/2022",
+      "location": "New York, NY",
+      "website": "https://flatironschool.com/",
+      "notes": "This seems like a pretty cool school!"
+    },
+    {
+      "id": "a6cea0df-323e-4e88-8cfa-d31d22ddcbf3",
+      "company": "A Terrible Company",
+      "job_title": "Bad End Developer",
+      "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "person_of_contact": "G. Wiz",
+      "date_applied": "03/10/2022",
+      "status": "Rejected",
+      "location": "Florida",
+      "website": "https://www.florida.com/",
+      "notes": ""
+    },
+    {
+      "id": "3301ccb0-572f-4270-892c-33cde669a418",
+      "company": "Google",
+      "job_title": "Back End Developer",
+      "short_description": "A small startup",
+      "person_of_contact": "Sundar Pichai",
+      "status": "Interview Scheduled",
+      "location": "Mountain View, CA",
+      "date_applied": "2022-03-10",
+      "website": "https://www.google.com/",
+      "notes": "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include a search engine, online advertising technologies, cloud computing, software, and hardware."
+    },
+    {
+      "id": "f821dbd8-b761-48e9-899d-dea8d76b3c02",
+      "company": "Space X",
+      "job_title": "NFT Expert",
+      "short_description": "GME to the moon!",
+      "person_of_contact": "Elon Musk",
+      "status": "Not Applied",
+      "location": "Hawthorne, CA",
+      "date_applied": "2022-03-10",
+      "website": "https://www.spacex.com/",
+      "notes": "I think they build rockets or something..."
+    },
+    {
+      "id": "b4d962dc-ec59-45ed-a260-2a87043829d4",
+      "company": "YouTube",
+      "job_title": "Video Watcher",
+      "short_description": "Where I waste most of my time.",
+      "person_of_contact": "Susan Wojcicki ",
+      "status": "Applied",
+      "location": "Probably Silicon Valley idk",
+      "date_applied": "2022-03-10",
+      "website": "https://www.youtube.com/",
+      "notes": "YouTube is an American online video sharing and social media platform owned by Google. It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim. It is the second most visited website, right after Google itself."
+    }
+  ]
+}
